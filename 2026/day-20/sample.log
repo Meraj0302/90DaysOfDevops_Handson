@@ -1,0 +1,59 @@
+2025-07-29 08:01:12 INFO Server started successfully
+2025-07-29 08:02:45 INFO Connected to database
+2025-07-29 08:05:10 ERROR Connection timed out
+2025-07-29 08:07:33 WARNING Disk usage at 75%
+2025-07-29 08:10:01 ERROR File not found: /etc/config/app.conf
+2025-07-29 08:12:55 ERROR Connection timed out
+2025-07-29 08:15:20 INFO Backup completed
+2025-07-29 08:18:42 Failed to authenticate user admin
+2025-07-29 08:20:11 ERROR Permission denied: /var/log/secure
+2025-07-29 08:22:30 ERROR Connection timed out
+2025-07-29 08:25:00 INFO Health check passed
+2025-07-29 08:28:17 ERROR File not found: /tmp/session_cache
+2025-07-29 08:30:45 CRITICAL Disk space below threshold
+2025-07-29 08:33:22 ERROR Connection timed out
+2025-07-29 08:35:10 Failed to write to disk: No space left
+2025-07-29 08:37:50 ERROR Disk I/O error on /dev/sda1
+2025-07-29 08:40:05 ERROR Permission denied: /home/deploy/.ssh
+2025-07-29 08:42:33 ERROR Connection timed out
+2025-07-29 08:45:12 INFO Service restarted
+2025-07-29 08:48:00 ERROR File not found: /opt/app/libs/core.so
+2025-07-29 08:50:22 ERROR Out of memory: Kill process 1234
+2025-07-29 08:53:44 ERROR Connection timed out
+2025-07-29 08:55:10 WARNING CPU usage at 90%
+2025-07-29 08:58:33 Failed authentication attempt from 192.168.1.105
+2025-07-29 09:00:15 ERROR Permission denied: /etc/shadow
+2025-07-29 09:02:40 ERROR Disk I/O error on /dev/sdb2
+2025-07-29 09:05:00 ERROR Connection timed out
+2025-07-29 09:07:18 INFO Scheduled task completed
+2025-07-29 09:10:44 ERROR File not found: /usr/local/bin/startup.sh
+2025-07-29 09:12:55 ERROR Out of memory: Kill process 5678
+2025-07-29 09:15:20 ERROR Connection timed out
+2025-07-29 09:17:45 Failed to mount /dev/sdc: Device busy
+2025-07-29 09:20:10 ERROR Permission denied: /root/.bashrc
+2025-07-29 09:22:33 ERROR Disk I/O error on /dev/sda1
+2025-07-29 09:25:00 CRITICAL Database connection lost
+2025-07-29 09:27:22 ERROR Connection timed out
+2025-07-29 09:30:11 ERROR File not found: /var/run/app.pid
+2025-07-29 09:32:44 ERROR Connection timed out
+2025-07-29 09:35:10 INFO Attempting reconnect to database
+2025-07-29 09:37:50 ERROR Out of memory: Kill process 9012
+2025-07-29 09:40:05 ERROR Connection timed out
+2025-07-29 09:42:33 Failed to start service: httpd
+2025-07-29 09:45:12 ERROR Permission denied: /etc/crontab
+2025-07-29 09:47:00 ERROR Disk I/O error on /dev/sdb2
+2025-07-29 09:50:22 ERROR Connection timed out
+2025-07-29 09:52:44 ERROR File not found: /etc/ssl/certs/server.crt
+2025-07-29 09:55:10 ERROR Connection timed out
+2025-07-29 09:57:33 INFO Log rotation completed
+2025-07-29 10:00:15 ERROR Permission denied: /var/www/html/upload
+2025-07-29 10:02:40 ERROR Connection timed out
+2025-07-29 10:05:00 CRITICAL Memory usage exceeded 95%
+2025-07-29 10:07:18 ERROR Disk I/O error on /dev/sda1
+2025-07-29 10:10:44 Failed to resolve hostname: db.internal
+2025-07-29 10:12:55 ERROR Connection timed out
+2025-07-29 10:15:20 ERROR File not found: /tmp/.lock
+2025-07-29 10:17:45 ERROR Out of memory: Kill process 3456
+2025-07-29 10:20:10 ERROR Connection timed out
+2025-07-29 10:22:33 INFO Snapshot created
+2025-07-29 10:25:00 ERROR Permission denied: /etc/hosts
