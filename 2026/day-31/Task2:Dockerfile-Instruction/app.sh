@@ -1,0 +1,1 @@
+echo "Hello this is inside from Ubuntu:v2 container"
