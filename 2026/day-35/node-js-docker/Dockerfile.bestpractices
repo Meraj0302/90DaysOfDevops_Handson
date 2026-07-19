@@ -1,0 +1,34 @@
+# Task 5: Multi-stage + best practices
+# - minimal base image (alpine)
+# - pinned version tag (not "latest")
+# - non-root user
+# - combined RUN commands to reduce layers
+
+# ---- Stage 1: builder ----
+FROM node:20.15.1-alpine AS builder
+
+WORKDIR /app
+
+COPY package.json .
+RUN npm install --omit=dev
+
+COPY index.js .
+
+# ---- Stage 2: minimal, non-root runtime ----
+FROM node:20.15.1-alpine
+
+WORKDIR /app
+
+# Combine steps into one RUN layer: create a dedicated non-root user/group
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/index.js .
+COPY --from=builder /app/package.json .
+
+# Switch away from root
+USER appuser
+
+EXPOSE 3000
+
+CMD ["node", "index.js"]

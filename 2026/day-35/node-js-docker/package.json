@@ -1,0 +1,12 @@
+{
+  "name": "day35-hello-world",
+  "version": "1.0.0",
+  "description": "Simple Hello World app for Docker multi-stage build demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
