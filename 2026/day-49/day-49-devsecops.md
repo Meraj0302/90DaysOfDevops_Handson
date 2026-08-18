@@ -24,16 +24,7 @@ I added Trivy to my main CI/CD pipeline.
 
 Trivy scans the Docker image for known vulnerabilities in operating-system packages and application libraries.
 
-```yaml
-- name: Scan Docker Image for Vulnerabilities
-  uses: aquasecurity/trivy-action@v0.36.0
-  with:
-    image-ref: '${{ secrets.DOCKERHUB_USERNAME }}/github-actions-capstone:${{ github.sha }}'
-    format: 'table'
-    exit-code: '1'
-    severity: 'CRITICAL,HIGH'
-    vuln-type: 'os,library'
-```
+> .
 
 The important configuration is:
 
@@ -78,33 +69,7 @@ The scan output displays vulnerability information including:
 * Severity
 * Vulnerability description
 
-## Screenshot
 
-> **Add your actual GitHub Actions screenshot here.**
->
-> Recommended screenshot:
->
-> `GitHub → Actions → Workflow Run → Trivy scan step`
->
-> The screenshot should clearly show the `Scan Docker Image for Vulnerabilities` step and the Trivy vulnerability table.
-
-```text
-[ INSERT TRIVY GITHUB ACTIONS SCREENSHOT HERE ]
-```
-
-### Scan Result
-
-**Scan status:** Replace with `PASSED` or `FAILED` after running the workflow.
-
-**Base image:** Replace with the base image from my Dockerfile.
-
-**Critical vulnerabilities:** Replace with the number shown by Trivy.
-
-**High vulnerabilities:** Replace with the number shown by Trivy.
-
-**CVE examples:** Replace with the CVE IDs displayed in the actual scan.
-
-> I will not claim a vulnerability count or CVE number without checking the actual GitHub Actions scan output.
 
 ---
 
